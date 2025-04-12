@@ -1,0 +1,80 @@
+.sobre-section {
+  background-color: #fdfdfd;
+  padding: 80px 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.sobre-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.sobre-header {
+  margin-bottom: 40px;
+}
+
+.sobre-logo {
+  max-width: 160px;
+  height: auto;
+}
+
+.sobre-textos {
+  text-align: left;
+  max-width: 960px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.sobre-formacoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.formacao-item {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.formacao-icon {
+  background-color: #4b2c1a;
+  padding: 12px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formacao-icon img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1);
+}
+
+.formacao-item span {
+  font-size: 1rem;
+  color: #2e2e2e;
+  font-weight: 500;
+}

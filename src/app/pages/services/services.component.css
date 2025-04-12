@@ -1,0 +1,99 @@
+/* Faz a seção ocupar toda a largura da tela */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+}
+
+.atuacao-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.atuacao-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.atuacao-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #2e2e2e;
+  margin-bottom: 16px;
+}
+
+.atuacao-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 48px auto;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.atuacao-card {
+  background-color: white;
+  padding: 32px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  position: relative;
+}
+
+.atuacao-card h3 {
+  font-size: 1.5rem;
+  color: #311c10;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.atuacao-item {
+  margin-bottom: 20px;
+}
+
+.atuacao-item h4 {
+  font-size: 1rem;
+  color: #2e2e2e;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.atuacao-item p {
+  font-size: 0.95rem;
+  color: #4d4d4d;
+  line-height: 1.4;
+}
+
+.card-icon {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4b2c1a;
+  border-radius: 50%;
+  padding: 12px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-icon img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+}

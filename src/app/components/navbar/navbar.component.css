@@ -1,0 +1,127 @@
+/* LOGO INSTITUCIONAL FORA DA NAVBAR */
+
+.header-logo img {
+  max-width: 160px;
+  height: auto;
+}
+
+/* NAVBAR GERAL */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+body {
+  scroll-behavior: smooth;
+  padding-top: 100px; /* ajuste para altura da navbar */
+}
+
+/* CONTAINER */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  gap: 48px;
+}
+
+/* NOME + SUBTÍTULO */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 16px;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.brand-name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  letter-spacing: 0.5px;
+}
+
+.brand-subtitle {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* MENU CENTRAL */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.15rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover,
+.navbar-menu .active {
+  color: #7c3f2c;
+  font-weight: 700;
+}
+
+/* AÇÕES */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-icon {
+  background-color: #4b2c1a;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.social-icon:hover {
+  background-color: #3e2416;
+}
+
+/* BOTÃO DE AGENDAMENTO */
+.btn-agendar {
+  background: linear-gradient(to right, #4b2c1a, #7c3f2c);
+  color: white;
+  padding: 10px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+}
+
+.btn-agendar:hover {
+  background: linear-gradient(to right, #3e2416, #5a2d1a);
+}

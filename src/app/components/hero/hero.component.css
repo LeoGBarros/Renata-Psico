@@ -1,0 +1,112 @@
+/* Força a section a ocupar toda a largura da tela */
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.hero-section {
+  background: #fdfdfd;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #1e1e1e;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.hero-text hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
+  width: 80%;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.hero-text .crp {
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-agendar {
+  background: linear-gradient(to right, #4b2c1a, #7c3f2c);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-agendar:hover {
+  background: linear-gradient(to right, #3e2416, #5a2d1a);
+}
+
+.btn-secundario {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-secundario:hover {
+  background: #f0f0f0;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
