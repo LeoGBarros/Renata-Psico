@@ -6,17 +6,15 @@ import { Component, AfterViewInit } from '@angular/core';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements AfterViewInit {
-
   ngAfterViewInit(): void {
-    const inicioLink = document.getElementById('scrollTopLink');
-    if (inicioLink) {
-      inicioLink.addEventListener('click', (event) => {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
-  
-    // Animação ao scroll...
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('mobileMenu');
+
+    toggle?.addEventListener('click', () => {
+      menu?.classList.toggle('open');
+    });
+
+    // Reaproveita animações ao scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -26,11 +24,9 @@ export class ServicesComponent implements AfterViewInit {
         }
       });
     }, { threshold: 0.1 });
-  
+
     document.querySelectorAll('.animate-on-scroll').forEach((el) => {
       observer.observe(el);
     });
   }
-  
-  
 }
