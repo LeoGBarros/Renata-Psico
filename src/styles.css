@@ -1,13 +1,24 @@
 .animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+}
+
+
+  .animate-foto {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.6s ease-out;
+    transform: scale(0.8) rotate(-5deg);
+    transition: all 0.8s ease-out;
   }
   
-  .animate-on-scroll.visible {
+  .animate-foto.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: scale(1) rotate(0deg);
   }
+  
 
   /* HAMBURGER BUTTON */
 .hamburger {
@@ -93,6 +104,94 @@
   .btn-agendar {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar mais compacta */
+  .navbar {
+    padding: 12px 0; /* reduz altura da navbar */
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0 20px;
+  }
+
+  .header-logo img {
+    max-width: 120px; /* logo menor */
+  }
+
+  .navbar-brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+  }
+
+  .btn-agendar {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  /* Compactar menu aberto */
+  .mobile-menu {
+    padding: 16px 0;
+  }
+
+  .mobile-menu-items {
+    gap: 12px;
+  }
+
+  .mobile-menu-items a {
+    font-size: 1rem;
+    padding: 4px 0;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Para desktop e telas grandes */
+body {
+  scroll-behavior: smooth;
+  padding-top: 100px;
+}
+
+/* Para tablet */
+@media (max-width: 1024px) {
+  body {
+    padding-top: 80px;
+  }
+}
+
+/* Para mobile */
+@media (max-width: 768px) {
+  body {
+    padding-top: 120px;
   }
 }
 
