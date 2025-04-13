@@ -1,26 +1,145 @@
-.animate-on-scroll {
-  opacity: 0;
-  transition: opacity 0.6s ease;
+/* ========== GERAL ========== */
+body {
+  scroll-behavior: smooth;
+  padding-top: 100px;
 }
 
-.animate-on-scroll.visible {
-  opacity: 1;
+/* ========== LOGO ========== */
+.header-logo img {
+  max-width: 160px;
+  height: auto;
 }
 
+/* ========== NAVBAR ========== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
-  .animate-foto {
-    opacity: 0;
-    transform: scale(0.8) rotate(-5deg);
-    transition: all 0.8s ease-out;
-  }
-  
-  .animate-foto.visible {
-    opacity: 1;
-    transform: scale(1) rotate(0deg);
-  }
-  
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  gap: 48px;
+  flex: 1;
+  flex-wrap: nowrap;
+}
 
-  /* HAMBURGER BUTTON */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  gap: 16px;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.brand-name {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #2e2e2e;
+  letter-spacing: 0.5px;
+}
+
+.brand-subtitle {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* ========== MENU DESKTOP ========== */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 1.15rem;
+  font-weight: 400;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.navbar-menu a:hover,
+.navbar-menu .active {
+  color: #7c3f2c;
+  font-weight: 400;
+}
+
+/* ========== SOCIAL + BOTÃO AGENDAR ========== */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+}
+
+.social-icon {
+  background-color: #4b2c1a;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+  overflow: hidden;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+.social-icon:hover {
+  background-color: #3e2416;
+}
+
+.btn-agendar {
+  background: linear-gradient(to right, #4b2c1a, #7c3f2c);
+  color: white;
+  padding: 10px 28px;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.btn-agendar:hover {
+  background: linear-gradient(to right, #3e2416, #5a2d1a);
+}
+
+/* ========== HAMBURGER BUTTON ========== */
 .hamburger {
   display: none;
   font-size: 28px;
@@ -28,10 +147,10 @@
   border: none;
   cursor: pointer;
   color: #4b2c1a;
-  z-index: 1001;
+  z-index: 10001;
 }
 
-/* MOBILE MENU */
+/* ========== MOBILE MENU ========== */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -42,8 +161,13 @@
   left: 0;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 999;
+  z-index: 9999;
   padding: 24px 0;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu.open {
+  display: flex;
 }
 
 .mobile-menu-items {
@@ -62,12 +186,28 @@
   font-weight: 500;
 }
 
-/* MENU ABERTO */
-.mobile-menu.open {
-  display: flex;
+/* ========== ANIMAÇÕES SCROLL ========== */
+.animate-on-scroll {
+  opacity: 0;
+  transition: opacity 0.6s ease;
 }
 
-/* RESPONSIVIDADE */
+.animate-on-scroll.visible {
+  opacity: 1;
+}
+
+.animate-foto {
+  opacity: 0;
+  transform: scale(0.8) rotate(-5deg);
+  transition: all 0.8s ease-out;
+}
+
+.animate-foto.visible {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+/* ========== RESPONSIVO ========== */
 @media (max-width: 1024px) {
   .navbar-menu,
   .navbar-actions {
@@ -83,45 +223,25 @@
     justify-content: space-between;
   }
 
-  .mobile-menu {
-    display: none;
+  body {
+    padding-top: 80px;
   }
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 12px 0;
+  }
+
   .navbar-container {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-  }
-
-  .navbar-brand {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .btn-agendar {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Navbar mais compacta */
-  .navbar {
-    padding: 12px 0; /* reduz altura da navbar */
-  }
-
-  .navbar-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
     padding: 0 20px;
   }
 
   .header-logo img {
-    max-width: 120px; /* logo menor */
+    max-width: 120px;
   }
 
   .navbar-brand {
@@ -138,11 +258,6 @@
     font-size: 0.7rem;
   }
 
-  .hamburger {
-    display: block;
-    font-size: 24px;
-  }
-
   .btn-agendar {
     width: 100%;
     text-align: center;
@@ -150,7 +265,6 @@
     padding: 8px 16px;
   }
 
-  /* Compactar menu aberto */
   .mobile-menu {
     padding: 16px 0;
   }
@@ -173,26 +287,8 @@
     width: 20px;
     height: 20px;
   }
-}
 
-/* Para desktop e telas grandes */
-body {
-  scroll-behavior: smooth;
-  padding-top: 100px;
-}
-
-/* Para tablet */
-@media (max-width: 1024px) {
-  body {
-    padding-top: 80px;
-  }
-}
-
-/* Para mobile */
-@media (max-width: 768px) {
   body {
     padding-top: 120px;
   }
 }
-
-  
