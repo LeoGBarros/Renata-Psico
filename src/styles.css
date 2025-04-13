@@ -24,6 +24,12 @@ body {
   flex-wrap: nowrap;
 }
 
+/* Compensação para navbar fixa */
+html {
+  scroll-padding-top: 100px;
+}
+
+
 .navbar-container {
   display: flex;
   align-items: center;
@@ -185,6 +191,19 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
 }
+
+@media (max-width: 1024px) {
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 170px;
+  }
+}
+
 
 /* ========== ANIMAÇÕES SCROLL ========== */
 .animate-on-scroll {
