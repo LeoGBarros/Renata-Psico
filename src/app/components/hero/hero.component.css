@@ -70,7 +70,7 @@
   color: #fff;
   padding: 12px 28px;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   transition: background 0.3s ease;
   white-space: nowrap;
@@ -102,6 +102,15 @@
   max-width: 600px;
   display: flex;
   justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.hero-image.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .hero-image img {

@@ -10,7 +10,7 @@
 }
 
 .atuacao-section {
-  background-color: #f9f9f9;
+  background-color: #fbe8e2;
   padding: 80px 20px;
   text-align: center;
 }
@@ -23,7 +23,7 @@
 
 .atuacao-title {
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #2e2e2e;
   margin-bottom: 16px;
 }
@@ -67,7 +67,7 @@
 .atuacao-item h4 {
   font-size: 1rem;
   color: #2e2e2e;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 6px;
 }
 
@@ -97,3 +97,4 @@
   height: 28px;
   filter: invert(1);
 }
+

@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  ngAfterViewInit(): void {
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear().toString();
+    }
+  }
+  
+
 }
