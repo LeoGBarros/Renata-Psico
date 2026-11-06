@@ -13,5 +13,5 @@ antes do lançamento.
 | 6 | **"Eu mesma respondo as mensagens"**: é verdade? | `features/hero/components/Hero.tsx` | Publicado |
 | 7 | **Nome completo** "Renata Cristina Sobral Stephan" (tirado da URL da Doctoralia) | `config/site.ts` | No rodapé e no JSON-LD |
 | 8 | **CEP e e-mail** do consultório | `config/site.ts` | Ausentes |
-| 9 | **Foto profissional:** a atual tem 260×310 px e fica borrada no tamanho do hero | `public/images/renata-sobral-retrato.png` | Foto antiga |
+| 9 | **Foto:** trocada por um recorte da foto do Instagram (880×1080, sem a legenda). Confirmar que ela aprova; um ensaio profissional segue sendo o ideal | `public/images/renata-sobral-retrato.jpg` | Foto do Instagram |
 | 10 | **Fotos do consultório** (opcional, reforçam confiança) | nova seção | Não há |

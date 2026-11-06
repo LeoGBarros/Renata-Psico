@@ -19,7 +19,7 @@ export const site = {
     legalName: 'Renata Cristina Sobral Stephan',
     jobTitle: 'Psicóloga e psicanalista',
     crp: 'CRP 06/76943',
-    portrait: '/images/renata-sobral-retrato.png',
+    portrait: '/images/renata-sobral-retrato.jpg',
   },
   phone: {
     display: '(19) 99877-2525',

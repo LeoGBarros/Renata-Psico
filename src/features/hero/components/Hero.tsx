@@ -46,8 +46,8 @@ export function Hero() {
         <Image
           src={site.professional.portrait}
           alt={`Retrato de ${site.professional.displayName}`}
-          width={260}
-          height={310}
+          width={880}
+          height={1080}
           sizes="(max-width: 760px) 90vw, 440px"
           preload
           className={styles.photo}
