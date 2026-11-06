@@ -1,0 +1,34 @@
+:root {
+  --color-ink: #23404a;
+  --color-ink-line: #3a5a64;
+  --color-text: #3b5058;
+  --color-text-muted: #4a5c61;
+  --color-text-subtle: #55666b;
+  --color-text-on-ink: #c9d4d6;
+
+  --color-coral: #e27461;
+  --color-coral-deep: #b9503d;
+  --color-coral-pale: #f6d3ca;
+  --color-coral-on-ink: #f2b5a7;
+
+  --color-cream: #fcf8f3;
+  --color-paper: #fffdf9;
+  --color-linen: #efe4d8;
+  --color-line: #e8ddd0;
+  --color-powder: #dce7ee;
+
+  --font-display-stack: var(--font-display), Georgia, serif;
+  --font-body-stack: var(--font-body), system-ui, sans-serif;
+  --font-handwriting-stack: var(--font-handwriting), 'Segoe Script', cursive;
+
+  --page-max-width: 1280px;
+  --page-gutter: clamp(20px, 4.4vw, 56px);
+  --section-space: clamp(72px, 9vw, 112px);
+
+  --radius-pill: 999px;
+  --radius-arch: 999px 999px 0 0;
+  --radius-tile: 24px;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}

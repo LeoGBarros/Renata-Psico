@@ -1,0 +1,71 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: color-mix(in srgb, var(--color-cream) 88%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 76px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brandName {
+  font-family: var(--font-display-stack);
+  font-weight: 600;
+  font-size: 23px;
+  letter-spacing: -0.01em;
+}
+
+.brandRole {
+  font-size: 13px;
+  color: var(--color-text-subtle);
+}
+
+.navigation {
+  display: flex;
+  gap: 28px;
+  font-size: 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  padding-block: 8px;
+  background: linear-gradient(var(--color-coral), var(--color-coral)) no-repeat left bottom / 0 1px;
+  transition: background-size 0.4s var(--ease-out-expo);
+}
+
+.navigation a:hover {
+  background-size: 100% 1px;
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .brandRole {
+    display: none;
+  }
+
+  .bar :global(.button) {
+    min-height: 44px;
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+}

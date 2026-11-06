@@ -1,0 +1,67 @@
+.approach {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-block: clamp(72px, 9vw, 96px);
+}
+
+.rule {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-coral-on-ink);
+}
+
+.ruleLineStart,
+.ruleLineEnd {
+  flex: 1 1 0;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.ruleLineStart {
+  transform-origin: 100% 50%;
+}
+
+.ruleLineEnd {
+  transform-origin: 0 50%;
+}
+
+.statement {
+  max-width: 1020px;
+  font-family: var(--font-display-stack);
+  font-weight: 200;
+  font-size: clamp(28px, 3.6vw, 48px);
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+}
+
+.statement strong {
+  font-weight: 700;
+}
+
+.highlight {
+  position: relative;
+  white-space: nowrap;
+}
+
+.ink {
+  position: absolute;
+  inset: 58% -4px 4% -4px;
+  background: var(--color-coral-deep);
+  border-radius: 2px;
+}
+
+.highlightText {
+  position: relative;
+}
